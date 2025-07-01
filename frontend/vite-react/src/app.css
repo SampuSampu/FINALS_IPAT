@@ -1,0 +1,225 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.login-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-center form {
+  background: #fff;
+  color: #213547;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-center input[type="text"],
+.login-center input[type="password"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border-color 0.2s;
+}
+
+.login-center input[type="text"]:focus,
+.login-center input[type="password"]:focus {
+  border-color: #646cff;
+  outline: none;
+  background: #fff;
+}
+
+.login-center button[type="submit"] {
+  background: linear-gradient(90deg, #646cff 0%, #535bf2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(83,91,242,0.08);
+}
+
+.login-center button[type="submit"]:hover {
+  background: linear-gradient(90deg, #535bf2 0%, #646cff 100%);
+  box-shadow: 0 4px 16px rgba(83,91,242,0.12);
+}
+
+.login-center h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.login-center p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.email-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.email-form {
+  background: #fff;
+  color: #213547;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.email-form input[type="email"],
+.email-form input[type="text"],
+.email-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.email-form input[type="email"]:focus,
+.email-form input[type="text"]:focus,
+.email-form textarea:focus {
+  border-color: #646cff;
+  outline: none;
+  background: #fff;
+}
+
+.email-form textarea {
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.email-form button[type="submit"] {
+  background: linear-gradient(90deg, #646cff 0%, #535bf2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(83,91,242,0.08);
+}
+
+.email-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #535bf2 0%, #646cff 100%);
+  box-shadow: 0 4px 16px rgba(83,91,242,0.12);
+}
+
+.email-form h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.email-form p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.top-right-btn {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  z-index: 1000;
+}
+.top-right-btn button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(90deg, #646cff 0%, #535bf2 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.25s;
+  box-shadow: 0 2px 8px rgba(83,91,242,0.08);
+}
+.top-right-btn button:hover {
+  background: linear-gradient(90deg, #535bf2 0%, #646cff 100%);
+  border-color: #646cff;
+}
+
+.login-form {
+  background: #fff;
+  color: #213547;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-error {
+  color: #e53935;
+  margin: 0;
+  font-size: 0.98rem;
+}
